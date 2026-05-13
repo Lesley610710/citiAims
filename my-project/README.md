@@ -1,9 +1,9 @@
 # citiAims
 
-A modern website built with the Astrowind Astro template, customized for citiAims.
+A modern website built for citiAims.
 
 ## Overview
-This project uses Astro and Tailwind CSS to deliver a fast, customizable marketing website for citiAims.
+This project uses a modern website framework to deliver a fast, customizable marketing website for citiAims.
 
 ## Prerequisites
 - Node.js 22.12.0 or higher
@@ -36,5 +36,4 @@ npm run preview
 Update content in src/pages/index.astro, src/config.yaml, and src/components.
 
 ## Notes
-- This project is based on the Astrowind Astro template.
 - The dev server is configured to run on port 3001.

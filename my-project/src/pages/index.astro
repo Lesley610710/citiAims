@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'citiAims — Modern website with Astro + Tailwind CSS',
+  title: 'citiAims — Modern business website',
   ignoreTitleTemplate: true,
 };
 ---
@@ -35,12 +35,12 @@ const metadata = {
   >
     <Fragment slot="title">
       Launch your <span class="hidden xl:inline">citiAims business with</span>
-      <span class="text-accent dark:text-white"> Astro v6</span> + Tailwind CSS
+      <span class="text-accent dark:text-white"> a modern website</span> designed for growth
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">citiAims</span> is a modern, customizable website template built to showcase your services and brand.
+        <span class="font-semibold">citiAims</span> is a modern, customizable website designed to showcase your services and brand.
       </span>
       <span class="block mb-1 sm:hidden font-bold text-blue-600">citiAims: Ready for launch.</span>
       Built for businesses, portfolios, SaaS sites, marketing pages, and more.
@@ -60,15 +60,15 @@ const metadata = {
     subtitle="A modern website starter designed to help citiAims showcase services, build trust, and convert visitors."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Modern website performance',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility. Now powered by Tailwind CSS v4.',
-        icon: 'tabler:brand-tailwind',
+          'A fast, polished website experience designed to help visitors discover your services and convert with confidence.',
+        icon: 'tabler:rocket',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Ready-to-use components',
         description:
-          'Widgets made with Tailwind CSS v4 ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+          'Pre-built sections and layouts that make it easy to launch your marketing website quickly and consistently.',
         icon: 'tabler:components',
       },
       {
@@ -98,22 +98,65 @@ const metadata = {
     ]}
   />
 
+  <!-- AssetLens UI Summary Widget ****** -->
+
+  <Content
+    isAfterContent
+    tagline="AssetLens UI"
+    title="What assetlens-ui does for your business"
+    subtitle="A secure, multi-tenant asset intelligence experience that gives each customer their own branded workspace, dashboards, and operational controls."
+    items={[
+      {
+        title: 'Multi-tenant access by subdomain',
+        description:
+          'Each customer gets their own secure subdomain with isolated access, so data and pages stay private per organisation.',
+      },
+      {
+        title: 'Tenant-specific dashboards',
+        description:
+          'Users see asset data, maintenance schedules, and reports tailored to their organisation, not a shared generic interface.',
+      },
+      {
+        title: 'Centralised admin and setup',
+        description:
+          'A single admin experience manages tenants, asset categories, functional locations, and organisation settings across the platform.',
+      },
+      {
+        title: 'Data-driven asset intelligence',
+        description:
+          'Built for asset lifecycle, valuations, disposal, and reporting, so teams can make smarter decisions faster.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1535378917047-0c7a9844b340?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+      alt: 'Asset management dashboard overview',
+    }}
+  >
+    <Fragment slot="content">
+      AssetLens UI is designed to help businesses manage equipment, facilities, and asset operations with secure, tenant-aware controls. It combines modern user experience, subdomain-based organisation separation, and Supabase-backed data storage to support real-world asset management workflows.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-slate-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
   <!-- Content Widget **************** -->
 
   <Content
     isReversed
     tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    title="Modern website blueprint: fun meets functionality"
     items={[
       {
-        title: 'Built on top of Astro v6',
+        title: 'Built on modern web foundations',
         description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+          'Delivering fast loading, accessibility, and a polished user experience for your visitors.',
       },
       {
-        title: 'Styled using Tailwind CSS v4',
+        title: 'Responsive and adaptable design',
         description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+          'A clean, flexible interface that looks great on desktop and mobile devices alike.',
       },
       {
         title: 'Cross-browser compatibility',
@@ -192,11 +235,11 @@ const metadata = {
       {
         title: 'Time and resource efficiency',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with this ready-to-customize website.',
       },
       {
         title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        description: `Access resources, examples, and support to help you customize and launch your website successfully.`,
       },
     ]}
     image={{
@@ -214,12 +257,12 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+    title="Get your dream website up and running in no time."
     items={[
       {
         title: 'Step 1: <span class="font-medium">Download</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+          "Start with the project files and install dependencies. Your canvas is ready to be shaped into a strong online presence.",
         icon: 'tabler:package',
       },
       {
@@ -231,7 +274,7 @@ const metadata = {
       {
         title: 'Step 3: <span class="font-medium">Customize styles</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair will make the website truly yours.',
         icon: 'tabler:paint',
       },
       {
@@ -249,7 +292,7 @@ const metadata = {
 
   <Features2
     title="Most used widgets"
-    subtitle="Provides frequently used components for building websites using Tailwind CSS v4"
+    subtitle="Provides frequently used components for building effective business websites"
     tagline="Components"
     items={[
       {
@@ -313,9 +356,8 @@ const metadata = {
 
   <BlogLatestPosts
     title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro v6 + Tailwind CSS v4.
-                        Astro is a very interesting technology. Thanks.
+    information={`The blog shares helpful resources about launching digital services, improving your online presence, and building a professional business website.
+                        Each new article will help you understand how to tell your story online and convert visitors into customers.
                 `}
   />
 
@@ -323,14 +365,14 @@ const metadata = {
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    subtitle="Dive into the following questions to gain insights into the powerful features this website offers and how it can elevate your business."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'Why choose this platform?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "A flexible website experience built to help your business connect with customers, showcase services, and create trust online.",
       },
       {
         title: 'What do I need to start?',
@@ -338,9 +380,9 @@ const metadata = {
           'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'How to install the website?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "Use the provided project files and follow the local setup instructions in README.md. Then run the development server to preview your website.",
       },
       {
         title: "What's something that you don't understand?",
@@ -377,20 +419,18 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
+        text: 'Launch your website',
+        href: '/contact',
+        icon: 'tabler:rocket',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      Build your online presence with confidence
     </Fragment>
 
     <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
+      Create a polished business website that helps visitors find your services and take action.
     </Fragment>
   </CallToAction>
 </Layout>

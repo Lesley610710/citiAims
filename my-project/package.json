@@ -1,7 +1,7 @@
 {
   "name": "citiAims",
   "version": "1.0.0",
-  "description": "A citiAims website built with Astro and Tailwind CSS.",
+  "description": "A citiAims website built with a modern website framework.",
   "type": "module",
   "private": true,
   "engines": {

@@ -11,7 +11,7 @@ metadata:
   title:
     default: citiAims
     template: '%s — citiAims'
-  description: "A modern website for citiAims built with Astro and Tailwind CSS."
+  description: "A modern website for citiAims built with a flexible, business-focused website framework."
   robots:
     index: true
     follow: true
