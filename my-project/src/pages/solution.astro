@@ -1,0 +1,182 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features from '~/components/widgets/Features.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Solution',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    tagline="Solution"
+    actions={[
+      { text: 'Contact us', href: '/contact', variant: 'primary' },
+      { text: 'About us', href: '/about' },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+      alt: 'Asset management solution dashboard',
+    }}
+  >
+    <Fragment slot="title">
+      Enterprise asset management for teams that need
+      <span class="text-accent dark:text-white"> real-time clarity</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      citiAims delivers a single platform for asset registers, maintenance execution, compliance and performance reporting across sites.
+    </Fragment>
+  </Hero>
+
+  <Features
+    tagline="Capabilities"
+    title="What citiAims delivers"
+    subtitle="A secure, configurable solution built to support complex asset portfolios, mobile field workflows, and executive reporting."
+    items={[
+      {
+        title: 'Asset register',
+        description:
+          'Capture assets, locations, models and lifecycle status in a trusted single source of truth.',
+        icon: 'tabler:database',
+      },
+      {
+        title: 'Work order management',
+        description:
+          'Plan, assign and execute maintenance tasks with clear status, priorities and approvals.',
+        icon: 'tabler:clipboard-list',
+      },
+      {
+        title: 'Inspections and compliance',
+        description:
+          'Run safety checks, audits and inspections with evidence-based records and corrective actions.',
+        icon: 'tabler:shield-check',
+      },
+      {
+        title: 'Mobile field access',
+        description:
+          'Field teams update jobs, capture notes and close tasks from any device, even in limited connectivity.',
+        icon: 'tabler:device-mobile',
+      },
+      {
+        title: 'Analytics dashboards',
+        description:
+          'Monitor uptime, spend, asset health and risk in intuitive reports that surface the right actions.',
+        icon: 'tabler:chart-bar',
+      },
+      {
+        title: 'Integrations',
+        description:
+          'Connect to finance, ERP, GIS and other systems to keep asset data aligned across your enterprise stack.',
+        icon: 'tabler:plug',
+      },
+    ]}
+  />
+
+  <Content
+    isAfterContent
+    tagline="Platform"
+    title="Built for operational leaders and service teams"
+    subtitle="Deliver better maintenance outcomes through structured workflows, shared asset context and visible performance goals."
+    items={[
+      {
+        title: 'Faster decision-making',
+        description:
+          'Bring asset condition, work progress and budget impact into one place so leaders act with confidence.',
+      },
+      {
+        title: 'Reduced downtime',
+        description:
+          'Keep assets running with preventive planning, fast response and clear prioritisation.',
+      },
+      {
+        title: 'Improved compliance',
+        description:
+          'Capture evidence, approvals and inspections in a way that is ready for audit review.',
+      },
+      {
+        title: 'Scalable operations',
+        description:
+          'Grow from core maintenance capability to enterprise-wide asset performance and sustainability reporting.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80',
+      alt: 'Operational asset analytics dashboard',
+    }}
+  >
+    <Fragment slot="content">
+      citiAims gives you a practical path to manage assets, field service and compliance from a modern digital platform.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-slate-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Steps2
+    title="How citiAims works"
+    subtitle="Three steps to get your asset program running with visibility and control."
+    items={[
+      {
+        title: 'Define the asset foundation',
+        description:
+          'Collect asset records, site information and maintenance requirements to build the system foundation.',
+      },
+      {
+        title: 'Configure workflows',
+        description:
+          'Set up work orders, inspections, approvals and team assignments for operational consistency.',
+      },
+      {
+        title: 'Measure performance',
+        description:
+          'Use dashboards and analytics to improve uptime, reduce cost and drive continuous improvement.',
+      },
+    ]}
+  />
+
+  <Features2
+    title="Why choose citiAims"
+    subtitle="A practical asset management solution with enterprise-ready control and field-ready execution."
+    columns={3}
+    items={[
+      {
+        title: 'One source of truth',
+        description:
+          'Avoid disconnected spreadsheets and fragmented systems with a single platform for assets and maintenance.',
+      },
+      {
+        title: 'Field-first workflows',
+        description:
+          'Empower technicians and inspectors with the right information at the right time, wherever they work.',
+      },
+      {
+        title: 'Actionable insight',
+        description:
+          'See the condition, risk and cost drivers that matter most so you can prioritise work that improves reliability.',
+      },
+    ]}
+  />
+
+  <CallToAction
+    title="See how citiAims can work for your assets"
+    subtitle="Contact our team to walk through the solution and discuss how it fits your operations."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Book a consultation',
+        href: '/contact',
+      },
+      {
+        text: 'Learn about the company',
+        href: '/about',
+      },
+    ]}
+  />
+</Layout>

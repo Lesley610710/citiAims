@@ -11,7 +11,7 @@ metadata:
   title:
     default: citiAims
     template: '%s — citiAims'
-  description: "A modern website for citiAims built with a flexible, business-focused website framework."
+  description: "citiAims is a unified asset intelligence platform for managing maintenance, compliance, and performance across asset-intensive organisations."
   robots:
     index: true
     follow: true

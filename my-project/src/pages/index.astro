@@ -7,13 +7,12 @@ import Features from '~/components/widgets/Features.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Steps from '~/components/widgets/Steps.astro';
 import Content from '~/components/widgets/Content.astro';
-import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'citiAims — Modern business website',
+  title: 'citiAims — Asset intelligence platform',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,106 +24,106 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Visit citiAims',
-        href: '/',
-        icon: 'tabler:home',
+        text: 'Talk to an expert',
+        href: '/contact',
+        icon: 'tabler:phone',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'See solution details', href: '/solution' },
     ]}
     image={{ src: '~/assets/images/hero-image.png', alt: 'citiAims Hero Image' }}
   >
     <Fragment slot="title">
-      Launch your <span class="hidden xl:inline">citiAims business with</span>
-      <span class="text-accent dark:text-white"> a modern website</span> designed for growth
+      Unlock intelligent asset operations with
+      <span class="text-accent dark:text-white"> citiAims</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">citiAims</span> is a modern, customizable website designed to showcase your services and brand.
+        citiAims empowers asset-intensive organisations to manage infrastructure, maintenance, and performance from a single digital platform.
       </span>
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">citiAims: Ready for launch.</span>
-      Built for businesses, portfolios, SaaS sites, marketing pages, and more.
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">citiAims brings asset intelligence to your team.</span>
+      Connect people, places, and assets with confidence.
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
-  <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
+  <Note title="Philosophy:" description="Connected asset intelligence, trusted operational workflows, and measurable outcomes." />
 
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with citiAims"
-    subtitle="A modern website starter designed to help citiAims showcase services, build trust, and convert visitors."
+    tagline="Capabilities"
+    title="Why organisations choose citiAims"
+    subtitle="A unified platform built to help teams manage assets, maintenance, compliance, and performance with clarity."
     items={[
       {
-        title: 'Modern website performance',
+        title: 'Asset lifecycle visibility',
         description:
-          'A fast, polished website experience designed to help visitors discover your services and convert with confidence.',
-        icon: 'tabler:rocket',
+          'Track every asset from acquisition through retirement so teams can make smarter decisions at every stage.',
+        icon: 'tabler:eye',
       },
       {
-        title: 'Ready-to-use components',
+        title: 'Predictive maintenance planning',
         description:
-          'Pre-built sections and layouts that make it easy to launch your marketing website quickly and consistently.',
-        icon: 'tabler:components',
+          'Anticipate service needs, reduce downtime, and extend asset life with data-driven maintenance workflows.',
+        icon: 'tabler:calendar-event',
       },
       {
-        title: 'Best Practices',
+        title: 'Real-time performance analytics',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
-        icon: 'tabler:list-check',
+          'Understand asset health, utilisation, and costs through dashboards that highlight the metrics that matter.',
+        icon: 'tabler:chart-bar',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Mobile field collaboration',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
+          'Field teams stay connected with work orders, inspections, and asset history available anytime, anywhere.',
+        icon: 'tabler:device-mobile',
       },
       {
-        title: 'Search Engine Optimization (SEO)',
+        title: 'Compliance and audit readiness',
         description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
+          'Document activity, manage risk, and keep stakeholders aligned with transparent operational records.',
+        icon: 'tabler:shield-check',
       },
       {
-        title: 'Open to new ideas and contributions',
+        title: 'Configurable workflows',
         description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
+          'Adapt citiAims to your organisation with flexible asset categories, approval flows, and reporting preferences.',
+        icon: 'tabler:settings',
       },
     ]}
   />
 
-  <!-- AssetLens UI Summary Widget ****** -->
+  <!-- citiAims Platform Overview Widget ****** -->
 
   <Content
     isAfterContent
-    tagline="AssetLens UI"
-    title="What assetlens-ui does for your business"
-    subtitle="A secure, multi-tenant asset intelligence experience that gives each customer their own branded workspace, dashboards, and operational controls."
+    tagline="Platform"
+    title="How citiAims transforms asset-intensive operations"
+    subtitle="A unified asset intelligence platform built for teams that need visibility, reliability, and sustainable performance."
     items={[
       {
-        title: 'Multi-tenant access by subdomain',
+        title: 'Connected asset register',
         description:
-          'Each customer gets their own secure subdomain with isolated access, so data and pages stay private per organisation.',
+          'Maintain a single source of truth for equipment, facilities, systems, and infrastructure across the organisation.',
       },
       {
-        title: 'Tenant-specific dashboards',
+        title: 'Operational dashboards',
         description:
-          'Users see asset data, maintenance schedules, and reports tailored to their organisation, not a shared generic interface.',
+          'Bring work orders, inspections, spend, and asset condition into one place for faster decisions.',
       },
       {
-        title: 'Centralised admin and setup',
+        title: 'Field-friendly workflows',
         description:
-          'A single admin experience manages tenants, asset categories, functional locations, and organisation settings across the platform.',
+          'Empower crews with mobile-ready tools that support inspections, service requests, and field updates in real time.',
       },
       {
-        title: 'Data-driven asset intelligence',
+        title: 'Sustainability and compliance',
         description:
-          'Built for asset lifecycle, valuations, disposal, and reporting, so teams can make smarter decisions faster.',
+          'Track performance against operational standards, sustainability goals, and budget targets with confidence.',
       },
     ]}
     image={{
@@ -133,7 +132,7 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      AssetLens UI is designed to help businesses manage equipment, facilities, and asset operations with secure, tenant-aware controls. It combines modern user experience, subdomain-based organisation separation, and Supabase-backed data storage to support real-world asset management workflows.
+      citiAims helps organisations streamline maintenance, capital planning, and asset performance by connecting people, processes, and data in a secure platform.
     </Fragment>
 
     <Fragment slot="bg">
@@ -145,33 +144,33 @@ const metadata = {
 
   <Content
     isReversed
-    tagline="Inside template"
-    title="Modern website blueprint: fun meets functionality"
+    tagline="Approach"
+    title="A modern foundation for asset and facilities teams"
     items={[
       {
-        title: 'Built on modern web foundations',
+        title: 'Reliable digital workflows',
         description:
-          'Delivering fast loading, accessibility, and a polished user experience for your visitors.',
+          'Standardise maintenance, inspections, and approvals so teams can work consistently and efficiently.',
       },
       {
-        title: 'Responsive and adaptable design',
+        title: 'Clear operational insights',
         description:
-          'A clean, flexible interface that looks great on desktop and mobile devices alike.',
+          'Turn asset data into actionable priorities with visual analytics and easy-to-understand metrics.',
       },
       {
-        title: 'Cross-browser compatibility',
+        title: 'Scalable implementation',
         description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+          'Start with core operations and expand into capital planning, sustainability, and mobile service execution.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Colorful Image',
+      alt: 'Operational dashboard and team collaboration',
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Built for operational confidence</h3>
+      citiAims combines strong data, field collaboration, and reporting so organisations can manage assets with complete visibility.
     </Fragment>
 
     <Fragment slot="bg">
@@ -185,31 +184,32 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Flexible configuration',
+        description:
+          'Adapt citiAims to your operational model with asset categories, service types, and approval flows that fit your organisation.',
       },
       {
-        title: 'Multiple layout possibilities',
+        title: 'Mobile-ready field access',
         description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+          'Give technicians and inspectors the tools they need to update work orders, capture notes, and close tasks from the field.',
       },
       {
-        title: 'Fully responsive design',
+        title: 'Performance-driven reporting',
         description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+          'Surface the KPIs that matter most so leaders can spot trends, manage budgets, and improve asset uptime.',
       },
       {
-        title: 'Integration of media',
+        title: 'Secure operational control',
         description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+          'Protect asset data with role-based access while keeping processes transparent and audit-ready.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
-      alt: 'Blueprint Image',
+      alt: 'Operational blueprint and planning',
     }}
   >
-    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">Build asset operations that scale with your organisation and deliver measurable business outcomes.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -223,31 +223,32 @@ const metadata = {
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
+        title: 'Operational resilience',
         description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+          'Give teams the structure and visibility they need to reduce downtime and keep critical assets performing reliably.',
       },
       {
-        title: 'Continuous improvement',
+        title: 'Continuous process improvement',
         description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+          'Use performance data to refine maintenance plans, reduce cost, and extend asset life across your portfolio.',
       },
       {
-        title: 'Time and resource efficiency',
+        title: 'Fast time to value',
         description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with this ready-to-customize website.',
+          'Deploy a practical platform quickly and begin capturing efficiency gains from day one.',
       },
       {
-        title: 'Community support',
-        description: `Access resources, examples, and support to help you customize and launch your website successfully.`,
+        title: 'Collaboration across teams',
+        description:
+          'Align operations, maintenance, and leadership with shared insights and a common asset management experience.',
       },
     ]}
     image={{
       src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      alt: 'Collaborative field operations image',
     }}
   >
-    <Fragment slot="content">Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">Designed to keep teams aligned, assets monitored, and operations moving forward.</Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
@@ -257,28 +258,28 @@ const metadata = {
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title="Get your dream website up and running in no time."
+    title="Start your asset intelligence journey with citiAims."
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Step 1: <span class="font-medium">Assess asset needs</span>',
         description:
-          "Start with the project files and install dependencies. Your canvas is ready to be shaped into a strong online presence.",
-        icon: 'tabler:package',
+          'Map your asset portfolio, critical systems, and maintenance priorities so citiAims can be configured for your operation.',
+        icon: 'tabler:search',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Step 2: <span class="font-medium">Deploy the platform</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
-        icon: 'tabler:letter-case',
+          'Set up asset registers, workflows, and dashboards quickly so your team can work from a single trusted source.',
+        icon: 'tabler:rocket',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Step 3: <span class="font-medium">Drive performance</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair will make the website truly yours.',
-        icon: 'tabler:paint',
+          'Use maintenance plans, inspections, and analytics to reduce risk, improve uptime, and align operations with budgets.',
+        icon: 'tabler:trending-up',
       },
       {
-        title: 'Ready!',
+        title: 'Ready to scale',
         icon: 'tabler:check',
       },
     ]}
@@ -291,59 +292,54 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title="Most used widgets"
-    subtitle="Provides frequently used components for building effective business websites"
-    tagline="Components"
+    title="Core capabilities"
+    subtitle="Essential platform modules that support asset operations, maintenance, and planning"
+    tagline="Capabilities"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
+        title: 'Asset register',
+        description: 'A central repository for equipment, locations, models, and lifecycle history.',
+        icon: 'flat-color-icons:database',
       },
       {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
+        title: 'Work orders',
+        description: 'Create, assign, and track service requests from initiation through completion.',
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
+        title: 'Inspections',
+        description: 'Capture audit findings, safety checks, and condition reports in the field.',
+        icon: 'flat-color-icons:approval',
+      },
+      {
+        title: 'Analytics',
+        description: 'Visualise downtime, spend, and asset trends with actionable dashboards.',
+        icon: 'flat-color-icons:gallery',
+      },
+      {
+        title: 'Mobile access',
+        description: 'Field teams stay productive with responsive tools and offline-ready workflows.',
         icon: 'flat-color-icons:advertising',
       },
       {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
+        title: 'Approvals',
+        description: 'Streamline authorisations for repairs, purchases, and capital projects.',
         icon: 'flat-color-icons:currency-exchange',
       },
       {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
+        title: 'Compliance',
+        description: 'Document work and asset activity to support audits and regulatory reporting.',
+        icon: 'flat-color-icons:template',
+      },
+      {
+        title: 'Integrations',
+        description: 'Connect citiAims with finance, GIS, and enterprise systems for smoother operations.',
         icon: 'flat-color-icons:voice-presentation',
       },
       {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
+        title: 'Support',
+        description: 'Access resources and guidance to keep your implementation running smoothly.',
         icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
       },
     ]}
   >
@@ -352,52 +348,43 @@ const metadata = {
     </Fragment>
   </Features2>
 
-  <!-- HighlightedPosts Widget ******* -->
-
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog shares helpful resources about launching digital services, improving your online presence, and building a professional business website.
-                        Each new article will help you understand how to tell your story online and convert visitors into customers.
-                `}
-  />
-
   <!-- FAQs Widget ******************* -->
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features this website offers and how it can elevate your business."
+    subtitle="Answers to common questions about citiAims and how it supports asset operations."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why choose this platform?',
+        title: 'What does citiAims do?',
         description:
-          "A flexible website experience built to help your business connect with customers, showcase services, and create trust online.",
+          'citiAims centralises asset records, maintenance planning, inspections, and performance reporting to help teams operate more efficiently.',
       },
       {
-        title: 'What do I need to start?',
+        title: 'Who is citiAims for?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'Organisations with asset-intensive operations, such as facilities, infrastructure, and maintenance teams, benefit most from the platform.',
       },
       {
-        title: 'How to install the website?',
+        title: 'How quickly can we get started?',
         description:
-          "Use the provided project files and follow the local setup instructions in README.md. Then run the development server to preview your website.",
+          'You can begin with a core asset and maintenance configuration, then expand into analytics and sustainability tracking as your team adopts the platform.',
       },
       {
-        title: "What's something that you don't understand?",
+        title: 'Can we access it from the field?',
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          'Yes. citiAims is designed for mobile access so field crews can complete work orders, capture inspections, and update asset status on the go.',
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'Does it support compliance and audits?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          'The platform records work activity, asset history, and approvals to help you stay audit-ready and maintain regulatory compliance.',
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'How does citiAims support better decision-making?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          'By combining asset data with operational metrics, the platform helps leaders identify opportunities to reduce downtime, control costs, and improve performance.',
       },
     ]}
   />
@@ -405,11 +392,12 @@ const metadata = {
   <!-- Stats Widget ****************** -->
 
   <Stats
+    title="Enterprise asset performance"
     stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
+      { title: 'Assets monitored', amount: '200K+' },
+      { title: 'Work orders completed', amount: '1.1M+' },
+      { title: 'Sites supported', amount: '360+' },
+      { title: 'Customer satisfaction', amount: '98%' },
     ]}
   />
 
@@ -419,18 +407,18 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Launch your website',
+        text: 'Book a demo',
         href: '/contact',
         icon: 'tabler:rocket',
       },
     ]}
   >
     <Fragment slot="title">
-      Build your online presence with confidence
+      Deliver smarter asset outcomes with citiAims
     </Fragment>
 
     <Fragment slot="subtitle">
-      Create a polished business website that helps visitors find your services and take action.
+      Empower your teams to manage assets, maintenance, and performance from one trusted platform.
     </Fragment>
   </CallToAction>
 </Layout>
